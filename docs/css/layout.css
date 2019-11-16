@@ -1,0 +1,14 @@
+/* body {
+
+} */
+
+.site {
+    max-width: var(--layout-width, 60em);
+    margin: 0 auto;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
