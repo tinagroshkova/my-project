@@ -16,12 +16,13 @@
     display: flex;
     padding: 0.5em 1em;
     background: #EEE;
-    color: #333;
+    color:  darkorchid;
     text-decoration: none;
+    border-radius: 1em;
 }
 
 .nav a:hover {
-    background: #090;
+    background: darkorchid;
     color: #FFF;
 }
 
