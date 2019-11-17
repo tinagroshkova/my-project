@@ -14,27 +14,16 @@
             <div class="site-branding">
                 <h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
                 <p> {{ site.description }}</p>
-                <img src="/images/eyeshadow.jpg" alt="">
             </div>
-
-            <nav class="nav">
-                <ul>
-                {% for page in site.pages %}
-                    {% if page.title %}
-                    <li class="page-title-{{ page.title | slugify }}"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
-                    {% endif %}
-                {% endfor %}
-                </ul>
-            </nav>
+            {% include navigation.html %}
         </header>
-        <section class="site-wrapper">
-            <img src="/images/eyeshadow.jpg" alt="">
 
-        </section>
         <main class="site-main">
-            {{ content }}
+            <h1>{{ page-title }}</h1>
 
+            {{ content }}
         </main>
+
         <footer class="site-footer">
             <p>{{ site.title }} &copy; All rights reserved</p>
 
