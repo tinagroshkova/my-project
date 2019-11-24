@@ -21,7 +21,6 @@
     border-radius: 1em;
 }
 
-.nav .current-page a,
 .nav a:hover {
     background: darkorchid;
     color: #FFF;

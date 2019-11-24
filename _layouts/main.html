@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="css/site.css">
-    <link rel="stylesheet" href=" {{ site.baseurl }}">
+    <link rel="stylesheet" href=" {{ site.baseurl }}/css/site.css">
 </head>
-<body>
+<body class="page-{{ page-title | slugify }}">
     <div class="site">
+
         <header class="site-header">
+
             <div class="site-branding">
                 <h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
                 <p> {{ site.description }}</p>
+        
             </div>
-            {% include navigation.html %}
+
+            {% include navigation.html location="header" %}
+            
         </header>
 
         <main class="site-main">
