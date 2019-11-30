@@ -4,10 +4,16 @@
 
 html {
 	font: 18px/1.5 'Marcellus', serif;
+	color: rgb(88, 50, 85);
 }
 
 body, button, input, select, option {
 	font: inherit;
+}
+
+body {
+	max-width: 60em;
+	margin: 0 auto;
 }
 
 a {

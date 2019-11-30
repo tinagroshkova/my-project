@@ -56,10 +56,12 @@
     
     }
 
+    li.page-title-home a:before {
+        content: '\f015';
+    }
     li.page-title-about a:before {
         content: '\f47f';
     }
-
     li.page-title-contacts a:before {
         content: '\f2a0';
     }
