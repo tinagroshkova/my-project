@@ -1,0 +1,34 @@
+{
+  "name": "my-project-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinagroshkova/my-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tinagroshkova/my-project/issues"
+  },
+  "homepage": "https://github.com/tinagroshkova/my-project#readme",
+  "devDependencies": {
+    "csso": "^4.0.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-size": "^3.0.0",
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}

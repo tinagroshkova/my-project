@@ -1,0 +1,31 @@
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Marcellus&display=swap');
+
+html {
+	font: 18px/1.5 'Marcellus', serif;
+}
+
+body, button, input, select, option {
+	font: inherit;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(204, 162, 196);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Parisienne', cursive;
+	line-height: 1.2;
+	padding-bottom: 0.5em;
+	font-weight: 500;
+}
+
+h1 { font-size: 2.8em; }
+h2 { font-size: 2.2em; }
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.0em; }
+

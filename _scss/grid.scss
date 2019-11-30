@@ -1,0 +1,35 @@
+$grid-columns: 12;
+
+.site {
+    display: grid;
+    grid-template-columns: repeat($grid-columns, 1fr);
+    grid-template-rows: auto 1fr auto;
+    // align-items: start;
+    align-content: start;
+    grid-gap: 2em;
+    min-height: 100vh;
+
+    &-header {
+        grid-column: 1 / -1;
+        background: #369;
+    }
+
+    &-main {
+        grid-column: span #{$grid-columns/3*2};
+        grid-row: 2;
+        background: rgba(lightblue, 0.5);
+        z-index: 5;
+
+    }
+    
+    &-sidebar {
+        grid-column: span #{$grid-columns/3};
+        grid-row: 2;
+        background: green;
+    }
+
+    &-footer {
+        background: orange;
+        grid-column: 1 / -1;
+    }
+}

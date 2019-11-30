@@ -1,0 +1,26 @@
+.social {
+	display: flex;
+}
+
+.social li {
+	display: block;
+	list-style: none outside;
+	margin-right: 1em;
+}
+
+.social a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+	border-radius: 50%;
+	background: rgba(255,255,255,0.5);
+	width: 2.8em;
+	height: 2.8em;
+	line-height: 1;
+	transition: background 0.2s ease-in;
+}
+
+.social a:hover {
+	background: rgba(255,255,255,0.9);
+}
