@@ -14,21 +14,20 @@
             document.querySelector('body').classList.add('loaded');
         });
     </script>
-    <link rel="stylesheet" href=" /css/site.css">
+    <link rel="stylesheet" href=" /my-project/css/site.css">
 </head>
 <body class="page-">
-    <!-- <input type="checkbox" id="nav-toggle" class="nav-toggle"> -->
+    <input type="checkbox" id="site-nav-toggle" class="site-nav-toggle">
     <div class="site">
+
         <header class="site-header">
-
-            <div class="site-branding">
-                <h1><a href="">Tina's project</a></h1>
-                <p> This is my first big project</p>
-        
-            </div>
-
-            <label for="nav-toggle" class="nav-toggle-label">Menu</label>
-<nav class="nav location-header">
+            <div class="site-wrapper">
+                <div class="site-branding">
+                    <h1><a href="/my-project">Tina's project</a></h1>
+                    <p> This is my first big project</p>
+                </div>
+                <label for="site-nav-toggle" class="site-nav-toggle-label">Menu</label>
+<nav class="site-nav location-header">
     <ul>
 
     
@@ -41,35 +40,35 @@
         
 
         <li class="page-title-home">
-            <a href="/">Home</a>
+            <a href="/my-project/">Home</a>
         </li>
         
     
         
 
         <li class="page-title-about current-page">
-            <a href="/about/">About</a>
+            <a href="/my-project/about/">About</a>
         </li>
         
     
         
 
         <li class="page-title-contacts">
-            <a href="/contacts/">Contacts</a>
+            <a href="/my-project/contacts/">Contacts</a>
         </li>
         
     
         
 
         <li class="page-title-gallery">
-            <a href="/gallery/">Gallery</a>
+            <a href="/my-project/gallery/">Gallery</a>
         </li>
         
     
         
 
         <li class="page-title-grid">
-            <a href="/grid/">Grid</a>
+            <a href="/my-project/grid/">Grid</a>
         </li>
         
     
@@ -77,25 +76,56 @@
 
     
 </nav>
-            
+            </div>
+
         </header>
+        <section class="site-media" style="background-image: url('https://images.unsplash.com/photo-1487412912498-0447578fcca8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+					
+            <div class="site-wrapper">
+                <h3>Your place for beauty hacks</h3>
+            </div>
+                
+        </section>           
+            
 
-        <main class="site-main">
-            <h1></h1>
-
-            <h2>About is here</h2>
+        <main class="site-content">
+            <div class="site-wrapper">
+                <h2>About is here</h2>
 <p>This is a site for beauty</p>
 
 
 
 
+            </div>
         </main>
 
         <footer class="site-footer">
-            <p>Tina's project &copy; All rights reserved</p>
+            <div class="site-wrapper">
 
+                <div class="info">
+                    <p>Tina's project</p>
+                    <p>A sleek, modern Jekyll theme for personal websites.</p>
+                    <p>Tina's project &copy; All rights reserved</p>
+                </div>
+
+                <ul class="social">
+                    <li>
+                        <a href="#">F</a>
+                    </li>
+                    <li>
+                        <a href="#">T</a>
+                    </li>
+                    <li>
+                        <a href="#">L</a>
+                    </li>
+                    <li>
+                        <a href="#">I</a>
+                    </li>
+                </ul>
+
+            </div>
         </footer>
     </div>
     
 </body>
-</html>
+</html> 
