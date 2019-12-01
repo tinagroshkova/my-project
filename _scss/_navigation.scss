@@ -16,10 +16,10 @@
 
         li {
             display: block;
-            margin: 0 0.7em;
-            transform: translate(0, -5em);
+            margin: 0 0.5em;
+            transform: translate(0, -2em);
             opacity: 0;
-            transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+            transition: opacity 0.4s ease-in, transform 0.4s ease-in;
 
             .loaded & {
                 opacity: 1;
@@ -35,7 +35,7 @@
 
     a {
         display: flex;
-        border-radius: 1em;
+        border-radius: 1.5em;
         padding: 0.5em 1em;
         background: #EEE;
         color: rgb(204, 162, 196);
