@@ -19,31 +19,76 @@
     <link rel="stylesheet" href=" {{ site.baseurl }}/css/site.css">
 </head>
 <body class="page-{{ page-title | slugify }}">
-    <!-- <input type="checkbox" id="nav-toggle" class="nav-toggle"> -->
+    <input type="checkbox" id="site-nav-toggle" class="site-nav-toggle">
     <div class="site">
-        <header class="site-header">
 
-            <div class="site-branding">
-                <h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
-                <p> {{ site.description }}</p>
-        
+        <header class="site-header">
+            <div class="site-wrapper">
+                <div class="site-branding">
+                    <h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
+                    <p> {{ site.description }}</p>
+                </div>
+                {% include navigation.html location="header" %}
             </div>
 
-            {% include navigation.html location="header" %}
-            
         </header>
+        <section class="site-media" style="background-image: url('https://images.unsplash.com/photo-1487412912498-0447578fcca8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+					
+            <div class="site-wrapper">
+                <h2>A sleek, modern Jekyll theme for personal websites</h2>
+                <p>Personal is the perfect theme for developers, designers and other creatives.</p>
+                <ul class="social">
+                    <li>
+                        <a href="#">F</a>
+                    </li>
+                    <li>
+                        <a href="#">T</a>
+                    </li>
+                    <li>
+                        <a href="#">L</a>
+                    </li>
+                    <li>
+                        <a href="#">I</a>
+                    </li>
+                </ul>
+            </div>
+                
+        </section>           
+            
 
-        <main class="site-main">
-            <h1>{{ page-title }}</h1>
-
-            {{ content }}
+        <main class="site-content">
+            <div class="site-wrapper">
+                {{ content }}
+            </div>
         </main>
 
         <footer class="site-footer">
-            <p>{{ site.title }} &copy; All rights reserved</p>
+            <div class="site-wrapper">
 
+                <div class="info">
+                    <p>{{ site.title }}</p>
+                    <p>A sleek, modern Jekyll theme for personal websites.</p>
+                    <p>{{ site.title }} &copy; All rights reserved</p>
+                </div>
+
+                <ul class="social">
+                    <li>
+                        <a href="#">F</a>
+                    </li>
+                    <li>
+                        <a href="#">T</a>
+                    </li>
+                    <li>
+                        <a href="#">L</a>
+                    </li>
+                    <li>
+                        <a href="#">I</a>
+                    </li>
+                </ul>
+
+            </div>
         </footer>
     </div>
     
 </body>
-</html>
+</html> 
