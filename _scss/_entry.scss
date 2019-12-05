@@ -41,22 +41,24 @@
 	margin: 2em 2em 2em -2em;
 	position: relative;
 	z-index: 20;
-	box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.07);
+	box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.7);
 	padding: 2em;
 }
 
 .entry-title {
 	padding-bottom: 0.5rem;
+	color: rgb(88, 50, 85);
 	font-weight: 500;
 	font-size: 3em;
 }
 
 .entry-title a {
-	color: #222;
+	color: rgb(53, 20, 48);
 }
 
 .entry-meta {
-	margin-bottom: 3em;
+	margin: 1.5em 1em 1.5em 1em;
+	color: rgb(142, 123, 157);
 }
 
 .entry:nth-child(even) .entry-media {
@@ -64,5 +66,5 @@
 }
 
 .entry:nth-child(even) .entry-content {
-	margin: 2em -2em 2em 2em;
+	margin: 3em -3em 3em 3em;
 }
