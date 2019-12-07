@@ -24,12 +24,9 @@
 	padding-top: 1em;
 }
 
-
-
-
 .site-media {
 	width: 100%;;
-	min-height: 60vh;
+	min-height: 55vh;
 	overflow: hidden;
 	background-position: center;
 	background-size: cover;
@@ -44,6 +41,7 @@
 	display: block;
 	content: '';
 	position: absolute;
+	background: rgba(245, 245, 245, 0.2);
 	top: 0; 
 	left: 0; 
 	right: 0; 
