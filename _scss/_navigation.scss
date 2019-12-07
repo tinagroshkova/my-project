@@ -65,7 +65,9 @@
     li.page-title-contacts a:before {
         content: '\f2a0';
     }
-
+    li.page-title-gallery a:before {
+        content: '\f302';
+    }
 }
 
 .site-nav-toggle {

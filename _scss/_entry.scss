@@ -1,19 +1,30 @@
 .entry {
-	display: flex;
-	height: 30em;
 	background: #F8F8F8;
 	position: relative;
 	z-index: 30;
 	top: -3em;
 	box-shadow: 0 0 1em 0 rgba(0,0,0,0.1);
 	margin-bottom: 3em;
+
+	@include bp(mobile) {
+		padding-bottom: 0.1em;
+	}
+
+	@include bp(desktop) {
+		display: flex;
+		height: 30em;
+	}
 }
 
 .entry-media {
-	flex: 0 0 50%;
 	position: relative;
 	overflow: hidden;
+	
+	@include bp(desktop) {
+		flex: 0 0 50%;
+	}
 }
+
 
 .entry-media:before {
 	display: block;
@@ -38,11 +49,15 @@
 
 .entry-content {
 	background: #FFF;
-	margin: 2em 2em 2em -2em;
 	position: relative;
 	z-index: 20;
 	box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.7);
 	padding: 2em;
+	
+	@include bp(desktop) {
+		flex-grow: 1;
+		margin: 2em 2em 2em -2em;
+	}
 }
 
 .entry-title {
@@ -66,5 +81,15 @@
 }
 
 .entry:nth-child(even) .entry-content {
-	margin: 3em -3em 3em 3em;
+	@include bp(desktop){
+		margin: 3em -3em 3em 3em;
+	}
 }
+
+.entry-content,
+.entry:nth-child(even) .entry-content {
+	@include bp(mobile){
+		margin: -2em 2em 2em 2em;
+	}
+}
+	
