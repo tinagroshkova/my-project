@@ -3,8 +3,20 @@
 @import url('https://fonts.googleapis.com/css?family=Marcellus&display=swap');
 
 html {
-	font: 18px/1.5 'Marcellus', serif;
+	font: 12px/1.5 'Marcellus', serif;
 	color: rgb(88, 50, 85);
+
+	@include bp(mobile) {
+		font-size: 14px;
+	}
+
+	@include bp(phone) {
+		font-size: 12px;
+	}
+
+	@include bp(desktop) {
+		font-size: 18px;
+	}
 }
 
 body, button, input, select, option {

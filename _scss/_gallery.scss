@@ -1,9 +1,10 @@
 .site-gallery {
-    max-width: 60em;
+    max-width: 67rem;
     margin: 0 auto;
 }
 
 .gallery {
+    margin-top: -2em;
     display: grid;
     grid-auto-rows: 20em;
     grid-template-columns: repeat(4, 1fr);
@@ -66,9 +67,15 @@
     img {
         display: block;
         position: absolute;
-        width: auto;
-        height: 100%;
         top: 50%; left: 50%;
         transform: translate(-50%, -50%);
+        .portrait {
+            width: auto;
+            height: 100%;
+        }
+        .landscape {
+            width: 100%;
+            height: auto;
+        }
     }
 }
