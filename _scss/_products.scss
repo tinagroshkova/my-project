@@ -30,6 +30,11 @@
 	img {
 		max-width: 10em;
 		height: auto;
+		transition: transform 0.5s ease-out;
+		margin-bottom: 1.5em;
+	}
+	img:hover {
+		transform: scale(1.3);
 	}
 	@include bp(mobile) {
 		display: block;	
@@ -71,3 +76,25 @@
 	font-size: 24px;
 }
 
+.woman,
+.woman-2 {
+	max-width: 20em;
+	height: auto;
+	transition: transform 0.5s ease-out;
+	box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.7);
+}
+
+.woman {
+	float: left;
+	margin: 2em 2em 2em 0;
+}
+
+.woman-2 {
+	float: right;
+	margin: 2em 0 2em 2em;
+}
+
+.woman:hover,
+.woman-2:hover {
+	transform: scale(2);
+}

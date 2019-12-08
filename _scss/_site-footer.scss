@@ -3,11 +3,11 @@
 	background-color: rgba(204, 162, 196, 0.7);
 	display: flex;
 	flex-direction: column;
-	box-shadow: 0 0 1em 0 rgba(0,0,0,0.1);
+	box-shadow: 0 0 1em 0 rgba(0,0,0,0.5);
 }
 
 .site-footer .site-wrapper {
-	padding: 2em 0;
+	padding: 1em 0;
 	font-size: 1.2em;
 	text-align: center;
 }
@@ -18,6 +18,10 @@
 }
 
 .site-footer .site-wrapper p {
+	font-size: 18px;
+}
+.site-footer .site-wrapper p,
+.site-footer .site-wrapper h3 {
 	opacity: 0.4;
 	transition: opacity 0.3s ease-in;
 }
@@ -30,13 +34,11 @@
 	font-size: 1.2em;
 }
 
-.site-footer:hover .site-wrapper p {
+.site-footer:hover .site-wrapper p,
+.site-footer:hover .site-wrapper h3 {
 	opacity: 0.8;
 }
 
-.site-footer .site-wrapper p:first-child {
-	font-size: 1.2em;
-}
 
 .social {
 	display: flex;
@@ -56,6 +58,7 @@
 			height: 2.8em;
 			line-height: 1;
 			transition: background 0.2s ease-in;
+			box-shadow: 0 0 1em 0 rgba(245,245,245,0.5);
 		}
 	}
 }
