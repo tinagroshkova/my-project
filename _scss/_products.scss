@@ -12,10 +12,11 @@
 	position: relative;
 	z-index: 20;
 	box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.7);
-	padding: 2em;
+	padding: 2em 4em 4em 3em;
 	
 	@include bp(desktop) {
 		// margin: 2em 2em 2em -2em;
+
 	}
 }
 .description {
@@ -30,6 +31,9 @@
 		max-width: 10em;
 		height: auto;
 	}
+	@include bp(mobile) {
+		display: block;	
+	}
 }
 
 .list {
@@ -41,16 +45,22 @@
 	font-size: 16px;
 	border-radius: 1.5em;
 	padding: 0.5em;
-	background: #EEE;
-	color: rgb(204, 162, 196);
+	background: rgb(204, 162, 196);
+	color:  #FFF;
 	text-decoration: none;
+	margin-bottom: 2em;
+    transition: 1s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 	&:hover {
-		background:rgb(204, 162, 196);
-		color: #FFF;
+		background: #FFF;
+		color:	rgb(204, 162, 196);
+		transition: 0.5s ease-in;
 	}
 }
 .products-title {
-	margin: 0 auto;
+	text-align: center;
 }
 
 .place {
@@ -60,3 +70,4 @@
 .price {
 	font-size: 24px;
 }
+
