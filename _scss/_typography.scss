@@ -28,6 +28,13 @@ a {
 	color: rgb(204, 162, 196);
 }
 
+  
+a:hover {
+	color: rgb(88, 50, 85);
+	animation: 1s ease;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Parisienne', cursive;
 	line-height: 1.2;
@@ -46,21 +53,24 @@ p {
 	padding-bottom: 1em;
 }
 
-.contacts { 
-	background-image: url(https://images.unsplash.com/photo-1517391882955-e1b20cafee7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-	overflow: hidden;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+.contacts {
+    max-width: 50rem;
+    height: 100%;
+    margin: 0 auto;
 	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	z-index: 30;
+	background: #FFF;
+	box-shadow: 0 0 1em 0 rgba(black, 0.5);
+	margin-top: -5em;
+	h1 {
+		text-align: center;
+		padding: 0.5em 0 0.5em 0;
+	}
 }
 
 iframe {
-	max-width: 20em;
-	max-height: 20em;
-	border-radius: 0.5em;
-	box-shadow: 0 0 1em 0 rgba(black, 0.5);
+	width: 45rem;
+	box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.7);
+	margin: 0 auto;
+	margin-left: 2em;
 }
