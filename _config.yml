@@ -11,10 +11,8 @@ plugins:
   - jekyll-feed
 
 exclude:
+exclude:
   - docs
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
   - Gemfile
   - Gemfile.lock
   - node_modules
@@ -23,7 +21,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - package-json
+  - package.json
   - package-lock.json
   - gulpfile.js
   - theme-personal
