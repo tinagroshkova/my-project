@@ -15,7 +15,8 @@
 }
 
 iframe {
-    max-width: 20em;
+    max-width: 15em;
+    height: 15em;
     box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.4);
     border-radius: 50%;
 }
@@ -35,12 +36,12 @@ fieldset {
     border-radius: 5em;
     margin: 2em;
     padding: 2em;
-        
+    
     legend {
         padding: 0 1em;
         font-weight: bold;
         font-size: 1.4em;
-        border-radius: 2em;
+
     }
 }
 
@@ -53,7 +54,7 @@ fieldset {
 .our-contacts {
     @include bp(desktop){
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         justify-items: center;
         margin: 2em 4em 0 4em;
     }
@@ -64,6 +65,11 @@ fieldset {
     .about {
         justify-self: center;
         text-align: center;
-        font-size: 22px;
+        font-size: 20px;
     }
+}
+
+input {
+    border-radius: 1em;
+    padding: 0.2em;
 }
