@@ -1,9 +1,9 @@
 @import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
 @import url('https://fonts.googleapis.com/css?family=Parisienne&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
 
 html {
-	font: 12px/1.5 'Marcellus', serif;
+	font-family: 'Crimson Text', serif;
 	color: rgb(88, 50, 85);
 
 	@include bp(mobile) {
@@ -23,15 +23,19 @@ body, button, input, select, option {
 	font: inherit;
 }
 
+body {
+	font-size: 20px;
+}
+
 a {
 	text-decoration: none;
 	color: rgb(204, 162, 196);
 }
 
-  
+
 a:hover {
-	color: rgb(88, 50, 85);
 	animation: 1s ease;
+	color: rgb(88, 50, 85);
 }
 
 
@@ -42,35 +46,13 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 500;
 }
 
-h1 { font-size: 3.0em; }
-h2 { font-size: 2.4em; }
-h3 { font-size: 2.0em; }
-h4 { font-size: 1.6em; }
-h5 { font-size: 1.4em; }
-h6 { font-size: 1.2em; }
+h1 { font-size: 2.6em; }
+h2 { font-size: 2.0em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.0em; }
 
 p {
 	padding-bottom: 1em;
-}
-
-.contacts {
-    max-width: 50rem;
-    height: 100%;
-    margin: 0 auto;
-	position: relative;
-	z-index: 30;
-	background: #FFF;
-	box-shadow: 0 0 1em 0 rgba(black, 0.5);
-	margin-top: -5em;
-	h1 {
-		text-align: center;
-		padding: 0.5em 0 0.5em 0;
-	}
-}
-
-iframe {
-	width: 45rem;
-	box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.7);
-	margin: 0 auto;
-	margin-left: 2em;
 }

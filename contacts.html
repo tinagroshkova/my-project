@@ -8,8 +8,80 @@ featured_image: https://images.unsplash.com/photo-1570797793859-594e3f5a04fc?ixl
 
 
 <div class="contacts">
-    <h1>
-        <a href="#">Find us</a>
-    </h1>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.744053587219!2d23.35008831532438!3d42.66677892366916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa85cca4a719b7%3A0xdf53fcbcd8e758d7!2z0KHQvtGE0YLRg9C10YDQtdC9INGD0L3QuNCy0LXRgNGB0LjRgtC10YI!5e0!3m2!1sbg!2sbg!4v1573912488950!5m2!1sbg!2sbg" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <form method="GET">
+    <fieldset>
+        <legend>Customer Details</legend>
+            <p>
+                <label for="first_name">First name</label>
+                <input type="text" name="first_name" id="first_name" tabindex="1" placeholder="Mary" autofocus>
+            </p>
+            <p>
+                <label for="last_name">Last name</label>
+                <input type="text" name="last_name" id="last_name" placeholder="Jane" autofocus>
+            </p>
+            <p>
+                <label for="male">Male</label>
+                <input type="radio" name="sex" value="male" id="male">
+                
+                <label for="female">Female</label>
+                <input type="radio" name="sex" value="female" id="female">
+                
+                <label for="other">Other</label>
+                <input type="radio" name="sex" value="other" id="other">
+            </p>
+            <p>
+                <label for="method">Preferred contact method:</label>
+                <label for="email">Email</label>
+                <input type="radio" name="email" value="email" id="email">
+
+                <label for="phone">Phone</label>
+                <input type="radio" name="phone" value="phone" id="phone">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" placeholder="your@email.com" autofocus>
+            </p>
+            <p>
+                <label for="email">Phone</label>
+                <input type="number" placeholder="+35985236225" autofocus>
+            </p>            
+            <p>
+                <label for="town">Town</label>
+                <select name="town" id="town">
+                    <option value="sofia">Sofia</option>
+                    <option value="plovdiv">Plovdiv</option>
+                    <option value="varna">Varna</option>
+                    <option value="burgas">Burgas</option>
+                    <option value="pleven">Pleven</option>
+                </select>
+            </p>
+            <p>
+                <label for="age">Age</label>
+                <input type="number" min="18" max="70">
+            </p>
+            <p>
+                <textarea name="more_information" id="more_information" cols="20" rows="5" placeholder="More information..."></textarea>
+            </p>
+            <p>
+                <label for="terms">I agree the Terms and Conditions</label>
+                <input type="checkbox" value="checked">
+            </p>
+            <p>
+                <label for="send"></label>
+                <input class="button" type="submit">                 
+            </p>           
+        </fieldset>
+    </form>
+
+    <div class="our-contacts">
+        <div class="about">
+            <h1>
+                <a href="#">Contacts</a> 
+            </h1>
+            <p><i class="fas fa-mobile-alt"></i> +359887 123 654</p>
+            <p><i class="fas fa-envelope-open-text"></i> tinagroshkova@gmail.com</p>
+            <p><i class="fas fa-map-marked-alt"></i> 105 The Broadway, London UB1 1LN</p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542689.1174832503!2d-2.621966999248119!3d51.51147600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487672abb3e43923%3A0xc20f494594b7d0c3!2sTina%E2%80%99s%20Hair%20%26%20Beauty!5e0!3m2!1sbg!2sbg!4v1575920701328!5m2!1sbg!2sbg" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
 </div>
