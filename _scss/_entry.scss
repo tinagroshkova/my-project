@@ -52,11 +52,19 @@
 	position: relative;
 	z-index: 20;
 	box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.7);
-	padding: 2em;
 	
 	@include bp(desktop) {
 		flex-grow: 1;
 		margin: 2em 2em 2em -2em;
+		padding: 2em;
+	}
+	@include bp(phone) {
+		flex-grow: 1;
+		padding: 1em;
+		
+		.entry-title {
+			font-size: 30px;
+		}
 	}
 }
 
@@ -67,7 +75,6 @@
 }
 
 .entry-meta {
-	margin: 1em 1em 1em 0;
 	color: rgb(142, 123, 157);
 }
 
@@ -84,7 +91,15 @@
 .entry-content,
 .entry:nth-child(even) .entry-content {
 	@include bp(mobile){
-		margin: -2em 2em 2em 2em;
+		margin: -1em 1em 1em 1em;
 	}
 }
-	
+
+.more {
+	font-size: 1.6rem;
+	text-align: right;
+	padding: 0.5em;
+	border-radius: 0.5em;
+	font-family: 'Parisienne', cursive;
+
+}

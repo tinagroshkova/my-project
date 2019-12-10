@@ -10,13 +10,13 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			.site-branding p {
+				margin-right: 3em;
+			}
 		}	
 	}
 }
 
-.site-branding p {
-	margin-right: 3em;
-}
 
 .site-media .site-wrapper {
 	width: 100%;
@@ -53,7 +53,5 @@
 	bottom: 0;
 }
 
-.site-media .social {
-	padding-top: 1em;
-}
+
 
