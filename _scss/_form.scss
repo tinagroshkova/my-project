@@ -82,6 +82,20 @@ fieldset {
 }
 
 
+@keyframes shadow-pulse {
+     0% {
+          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+     }
+     100% {
+          box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+     }
+}
+
+.icons i {
+     animation: shadow-pulse 1s infinite;
+}
+
+
 fieldset .button {
     padding: 0.2em 0.6em;
     font-size: 1.5em;
