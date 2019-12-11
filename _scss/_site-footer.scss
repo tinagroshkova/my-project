@@ -19,6 +19,9 @@
 
 .site-footer .site-wrapper p {
 	font-size: 18px;
+	@include bp(phone) {
+		padding: 1em;
+	}
 }
 .site-footer .site-wrapper p,
 .site-footer .site-wrapper h3 {

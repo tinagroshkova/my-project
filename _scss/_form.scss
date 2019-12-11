@@ -34,6 +34,7 @@ form {
     @include bp(phone) {
         margin: 0 auto;
         font-size: 16px;
+        padding: 0 1.5em 0 1.5em;
     }
 }
 
@@ -46,11 +47,12 @@ fieldset {
     border: 2px solid rgb(204, 162, 196);
     box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.2);
     border-radius: 5em;
-    margin: 2em;
+    margin: 1em 2em 2em 2em;
     padding: 2em;
+    font-size: 1.2em;
     
     legend {
-        padding: 0 1em;
+        padding: 0 1.5em;
         font-weight: bold;
         font-size: 1.4em;
     }
@@ -61,3 +63,26 @@ fieldset {
     flex-direction: column;
 }
 
+.icons i {
+    border-radius: 50%;
+    background: rgba(204, 162, 196, 0.5);
+    color: white;
+    justify-content: center;
+    align-items: center;
+	width: 1.5em;
+    height: 1.5em;
+    padding: 0.2em;
+    line-height: 1;
+    transition: background 0.2s ease-in;
+    margin-right: 0.2em;
+    
+    &:hover {
+		background: rgba(88, 50, 85, 0.7);
+    }
+}
+
+
+fieldset .button {
+    padding: 0.2em 0.6em;
+    font-size: 1.5em;
+}
