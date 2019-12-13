@@ -31,7 +31,6 @@
 
 .site-media {
 	width: 100%;;
-	min-height: 55vh;
 	overflow: hidden;
 	background-position: center;
 	background-size: cover;
@@ -40,6 +39,18 @@
 	display: flex;
 	flex-direction: column;
 	box-shadow: 0 0 1em 0 rgba(0,0,0,0.5);
+
+	@include bp(desktop) {
+		min-height: 60vh;
+	}
+	
+	@include bp(mobile) {
+		min-height: 50vh;
+	}
+
+	@include bp(phone) {
+		min-height: 40vh;
+	}
 }
 
 .site-media:before {
@@ -53,5 +64,13 @@
 	bottom: 0;
 }
 
+.site-branding a {
+	@include bp(mobile) {
+		font-size: 46px;
+	}
 
+	@include bp(phone) {
+		font-size: 42px;
+	}
+}
 

@@ -37,7 +37,7 @@
         display: flex;
         border-radius: 2em;
         padding: 0.4em 0.8em;
-        background: #EEE;
+        background: rgba(188, 190, 195, 0.3);
         color: rgb(204, 162, 196);
         text-decoration: none;
         font-size: 1.1em;
@@ -75,18 +75,15 @@
     position: absolute;
     pointer-events: none;
     opacity: 0;
-
+    
     &:checked + .site .site-header .site-nav {
         @include bp(mobile) {
             display: block;
         }
     }
-    
     &-label {
-
         @include bp(desktop) {
             display: none;
         }
-
     }
 }

@@ -35,6 +35,9 @@ form {
         margin: 0 auto;
         font-size: 16px;
         padding: 0 1.5em 0 1.5em;
+        a {
+            font-size: 36px;
+        }
     }
 }
 
@@ -47,10 +50,16 @@ fieldset {
     border: 2px solid rgb(204, 162, 196);
     box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.2);
     border-radius: 5em;
-    margin: 1em 2em 2em 2em;
-    padding: 2em;
-    font-size: 1.2em;
     
+    @include bp(desktop) {
+        margin: 1em 2em 2em 2em;
+        padding: 2em;
+        font-size: 1.2em;
+    }
+    @include bp(phone) {
+        padding: 1em;
+    }
+
     legend {
         padding: 0 1.5em;
         font-weight: bold;
@@ -98,5 +107,5 @@ fieldset {
 
 fieldset .button {
     padding: 0.2em 0.6em;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }

@@ -31,7 +31,7 @@
 	img {
 		max-width: 9em;
 		height: auto;
-		transition: transform 0.4s ease-out;
+		transition: transform 0.3s ease-out;
 		margin-bottom: 1.5em;
 	}
 
@@ -39,7 +39,7 @@
 		transform: scale(1.3);
 
 		@include bp(phone) {
-			transform: scale(1.1);
+			transform: scale(1.2);
 		}
 	}
 
@@ -85,25 +85,44 @@
 
 .woman,
 .woman-2 {
-	max-width: 20em;
 	height: auto;
-	transition: transform 0.5s ease-out;
+	transition: transform 0.4s ease-out;
 	box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.7);
+
+	@include bp(desktop) {
+		max-width: 22rem;
+
+		&:hover {
+			transform: scale(1.6);
+		}
+	}
+	@include bp(mobile) {
+		max-width: 15rem;
+		margin: 1em;
+
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
 }
 
-.woman {
-	float: left;
-	margin: 2em 2em 2em 0;
+.woman { 
+	@include bp(desktop) {
+		float: left;
+		margin: 1em 2em 2em 0;
+	}
 }
 
 .woman-2 {
-	float: right;
-	margin: 2em 0 2em 2em;
+	@include bp(desktop) {
+		float: right;
+		margin: 1em 0 2em 2em;
+	}
+	@include bp(desktop) {
+		display: block;
+		margin: 0 auto;
+	}
 }
 
-.woman:hover,
-.woman-2:hover {
-	transform: scale(2);
-}
 
 
