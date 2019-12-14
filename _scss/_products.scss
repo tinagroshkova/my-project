@@ -90,7 +90,7 @@
 	box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.7);
 
 	@include bp(desktop) {
-		max-width: 22rem;
+		max-width: 20rem;
 
 		&:hover {
 			transform: scale(1.6);
@@ -104,6 +104,11 @@
 			transform: scale(1.2);
 		}
 	}
+	@include bp(phone) {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 1em;
+	}
 }
 
 .woman { 
@@ -116,13 +121,52 @@
 .woman-2 {
 	@include bp(desktop) {
 		float: right;
-		margin: 1em 0 2em 2em;
-	}
-	@include bp(desktop) {
-		display: block;
-		margin: 0 auto;
+		margin: 1 0 2em 2em;
 	}
 }
 
+.about-video {
+	display: block;
+	margin: 0 auto;
+	box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.7);
 
+	@include bp(desktop) {
+		margin-top: 1em;
+		margin-bottom: 2em;
+	}
+	@include bp(mobile) {
+		max-width: 90%;
+		height: auto;
+		margin-bottom: 1em;
+	}
+}
 
+.about-image {
+	width: 100%;
+	height: auto;
+}
+
+.image-title {
+	position: absolute;
+	transition: transform 1s ease-in;
+
+	@include bp(desktop) {
+		bottom: 10em;
+		left: 10em;
+
+		&:hover {
+			color:	rgb(204, 162, 196);
+			transform: scale(1.3);
+		}
+	}
+
+	@include bp(mobile) {
+		bottom: 8em;
+		left: 5em;
+		font-size: 1.2em;
+		&:hover {
+			color:	rgb(204, 162, 196);
+			transform: scale(1.1);
+		}
+	}
+}

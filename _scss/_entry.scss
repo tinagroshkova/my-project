@@ -46,8 +46,7 @@
 	}
 }
 
-.entry-content,
-.products-content {
+.entry-content {
 	background: #FFF;
 	position: relative;
 	z-index: 20;
@@ -69,6 +68,30 @@
 		padding: 1em;
 	}
 }
+
+.products-content {
+	background: #FFF;
+	position: relative;
+	z-index: 20;
+	box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.7);
+	margin: 0 auto;
+	
+	@include bp(desktop) {
+		flex-grow: 1;
+		margin: 2em 2em 2em -2em;
+		padding: 2em 3em 2em 3em;
+	}
+	@include bp(mobile) {
+		flex-grow: 1;
+		margin: 2em 2em 2em -2em;
+		padding: 2em;
+	}
+	@include bp(phone) {
+		flex-grow: 1;
+		padding: 1em;
+	}
+}
+
 
 .entry-title,
 .products-title {
