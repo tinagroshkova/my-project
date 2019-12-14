@@ -161,12 +161,7 @@
 	}
 
 	@include bp(mobile) {
-		bottom: 8em;
-		left: 5em;
-		font-size: 1.2em;
-		&:hover {
-			color:	rgb(204, 162, 196);
-			transform: scale(1.1);
-		}
+		display: none;
+		
 	}
 }
